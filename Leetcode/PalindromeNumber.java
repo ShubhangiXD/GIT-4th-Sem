@@ -1,6 +1,6 @@
 import java.util.*;//program to find whether a number is a palindrome (9. Palindrome Number [Easy])
 
-public class palindrome {
+public class PalindromeNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
