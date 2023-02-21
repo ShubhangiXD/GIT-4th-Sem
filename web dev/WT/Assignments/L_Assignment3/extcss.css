@@ -1,0 +1,12 @@
+body {
+    background-color: gray;
+}
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: bisque;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color:antiquewhite;
+}

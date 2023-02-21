@@ -1,0 +1,15 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+td {
+    width: 200;
+}
+
+.capital_ol {
+    list-style-type: upper-alpha;
+}
+
+.roman_ol {
+    list-style-type: lower-roman;
+}

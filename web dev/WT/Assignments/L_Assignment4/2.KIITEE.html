@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="Kiitee.css">
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+    <table align="center" cellpadding="10">
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="FirstName" maxlength="50">
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="LastName" maxlength="50"></td>
+        </tr>
+        <tr>
+            <td>Email ID</td>
+            <td><input type="email" name="EmailID" maxlength="100"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number</td>
+            <td>
+                <input type="text" name="MobileNumber" maxlength="10">
+            </td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="Gender" value="Male">Male
+                <input type="radio" name="Gender" value="Female">Female
+                <input type="radio" name="Gender" value="Other">Other
+            </td>
+        </tr>
+        <tr>
+            <td>Date of Birth(DOB)</td>
+            <td>
+                <input type="date">
+            </td>
+        </tr>
+        <tr>
+            <td>Address<br /><br /><br /></td>
+            <td><textarea name="Address" rows="10" cols="50"></textarea></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text" name="City" maxlength="50"></td>
+        </tr>
+        <tr>
+            <td>Pin Code</td>
+            <td><input type="Number" name="PinCode" maxlength="6"></td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td><input type="text" name="State" maxlength="50"/></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td><input type="text" name="Country"/></td>
+        </tr>
+        <tr>
+            <td>Qualification <br /><br /><br /></td>
+            <td>
+                <br />
+                <input type="checkbox" name="HighSchool" value="High School" />
+                High School(10th)<br>
+                <input type="checkbox" name="HigherSchool" value="Higher School" />
+                Higher School(12th)<br />
+                <input type="checkbox" name="Graduation" value="Graduation" />
+                Graduation(Bachelors)<br />
+                <input type="checkbox" name="PostGraduation" value="Post Graduation" />
+                Post Graduation(Masters)<br />
+                <input type="checkbox" name="Phd" value="Phd">
+                Phd
+            </td>
+        </tr>
+        <tr>
+            <td>Courses<br />Applied For</td>
+            <td>
+                <select>
+                    <option value="Course">Course</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.Arch">B.Arch</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="M.Tech">M.Tech</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Upload Marksheet</td>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td>Upload Signature</td>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td>Upload Passport Photo</td>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <div class="button">
+                    <button class="cssbuttons-io-button" formaction="landing2.html"> Register Now
+                        <div class="icon">
+                            <svg height="25" width="200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+
+</html>

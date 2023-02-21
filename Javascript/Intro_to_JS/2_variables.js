@@ -1,0 +1,11 @@
+var carcolor = "blue";
+var car2 = "red";
+console.log(carcolor);
+console.log(car2 + carcolor);
+var num1 = "5";
+var num2 = 5;
+console.log(num1);
+console.log(num2);
+console.log(num2+num2);
+var bol= true;
+console.log(bol);

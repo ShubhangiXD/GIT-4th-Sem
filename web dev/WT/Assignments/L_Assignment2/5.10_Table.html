@@ -1,0 +1,64 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <table border="2" width="800">
+        <tr>
+            <td><b>Header Column 1</b></td>
+            <td><b>Header Column 2</b></td>
+            <td><b>Header Column 3</b></td>
+            <td><b>Header Column 4</b></td>
+        </tr>
+        <tr>
+            <td>Row2 - Item 1</td>
+            <td>Row2 - Item 2</td>
+            <td rowspan="2">Row 2: Nested Table 1
+                <table border="2" width="150">
+                    <tr>
+                        <td>Row Header 1</td>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <td>Row Header 2</td>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <td>Row Header 3</td>
+                        <td>item</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Row2 - Item 4<br>A second line</td>
+        </tr>
+        <tr height="75">
+            <td>
+                Row3: Nested Table 2
+                <table border="2" width="150">
+                    <tr>
+                        <td>Row Header 1</td>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <td>Row Header 2</td>
+                        <td>item</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Row3 - Item 2</td>
+            <td rowspan="2">Row3 - Item 3</td>
+        </tr>
+        <tr>
+            <td>Row4 - Item 1</td>
+            <td>Row4 - Item 2</td>
+            <td>Row4 - Item 3</td>
+        </tr>
+        <tr>
+            <td colspan="4">Row5 - Last row of outer table</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Using different style sheets</title>
+    <link rel="stylesheet" href="list_style.css">
+    <style>
+        .ul_disc {
+            list-style-type: disc;
+        }
+
+        .ul_circle {
+            list-style-type: circle;
+        }
+
+        .square_ul {
+            list-style-type: square;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Making different lists in HTML</h1>
+    <table align="center">
+        <tr>
+            <td>
+                <ul class="ul_disc">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+            </td>
+            <td>
+                <ol class="capital_ol">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+            </td>
+            <td>
+                <dl>
+                    Coffee
+                    <dd>-Black Hot Drink</dd>
+                    Tea
+                    <dd>-Cold White Drink</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul class="ul_circle">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+            </td>
+            <td>
+                <ol start="3">
+                    <li>Coffee</li> 
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+            </td>
+            <td rowspan="2">
+                <ul>
+                    <li>Item A</li>
+                    <li>Item B
+                        <ul class="circle">
+                            <li>Subtem B.1</li>
+                            <li>Subtem B.2</li>
+                        </ul>
+                    </li>
+                    <li>Item C</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul class="square_ul">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+            </td>
+            <td>
+                <ol class="roman_ol">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
