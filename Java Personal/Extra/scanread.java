@@ -1,3 +1,4 @@
+//writing a program to display the user's name using Scanner class. 
 import java.util.*;
 public class scanread {
     public static void main(String[] args) {
