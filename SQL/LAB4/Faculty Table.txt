@@ -1,0 +1,116 @@
+
+
+
+SQL> create table faculty(FacultyID NUMBER(3) unique, Name VARCHAR2(15) NOT NULL, RoomID NUMBER(2), Phone CHAR(3) UNIQUE, DeptID NUMBER(1));
+
+Table created.
+
+SQL> select * from faculty
+  2  ;
+
+no rows selected
+
+SQL> insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID);
+Enter value for facultyid: 111
+Enter value for name: Jones
+Enter value for roomid: 11
+Enter value for phone: 525
+Enter value for deptid: 1
+old   1: insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID)
+new   1: insert into faculty values(111, 'Jones', 11, '525', 1)
+
+1 row created.
+
+SQL> insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID);
+Enter value for facultyid: 222
+Enter value for name: Williams
+Enter value for roomid: 20
+Enter value for phone: 533
+Enter value for deptid: 2
+old   1: insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID)
+new   1: insert into faculty values(222, 'Williams', 20, '533', 2)
+
+1 row created.
+
+SQL> insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID);
+Enter value for facultyid: 123
+Enter value for name: Mobley
+Enter value for roomid: 11
+Enter value for phone: 529
+Enter value for deptid: 1
+old   1: insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID)
+new   1: insert into faculty values(123, 'Mobley', 11, '529', 1)
+
+1 row created.
+
+SQL> insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID);
+Enter value for facultyid: 235
+Enter value for name: Vajpayee
+Enter value for roomid: 12
+Enter value for phone: 577
+Enter value for deptid: 2
+old   1: insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID)
+new   1: insert into faculty values(235, 'Vajpayee', 12, '577', 2)
+
+1 row created.
+
+SQL> insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID);
+Enter value for facultyid: 345
+Enter value for name: Sen
+Enter value for roomid: 12
+Enter value for phone: 579
+Enter value for deptid: 3
+old   1: insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID)
+new   1: insert into faculty values(345, 'Sen', 12, '579', 3)
+
+1 row created.
+
+SQL> insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID);
+Enter value for facultyid: 444
+Enter value for name: Rivera
+Enter value for roomid: 21
+Enter value for phone: 544
+Enter value for deptid: 4
+old   1: insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID)
+new   1: insert into faculty values(444, 'Rivera', 21, '544', 4)
+
+1 row created.
+
+SQL> insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID);
+Enter value for facultyid: 555
+Enter value for name: Chang
+Enter value for roomid: 17
+Enter value for phone: 587
+Enter value for deptid: 5
+old   1: insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID)
+new   1: insert into faculty values(555, 'Chang', 17, '587', 5)
+
+1 row created.
+
+SQL> insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID);
+Enter value for facultyid: 333
+Enter value for name: Collins
+Enter value for roomid: 17
+Enter value for phone: 599
+Enter value for deptid: 3
+old   1: insert into faculty values(&FacultyID, '&Name', &RoomID, '&Phone', &DeptID)
+new   1: insert into faculty values(333, 'Collins', 17, '599', 3)
+
+1 row created.
+
+SQL> select * from faculty;
+
+ FACULTYID NAME                ROOMID PHO     DEPTID                            
+---------- --------------- ---------- --- ----------                            
+       111 Jones                   11 525          1                            
+       222 Williams                20 533          2                            
+       123 Mobley                  11 529          1                            
+       235 Vajpayee                12 577          2                            
+       345 Sen                     12 579          3                            
+       444 Rivera                  21 544          4                            
+       555 Chang                   17 587          5                            
+       333 Collins                 17 599          3                            
+
+8 rows selected.
+
+SQL> spool off;

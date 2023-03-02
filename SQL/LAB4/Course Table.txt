@@ -1,0 +1,78 @@
+SQL> create table course(CourseID VARCHAR2(6) Unique, Title VARCHAR2(20) unique, Credits NUMBER(1), PreReq VARCHAR2(6));
+
+Table created.
+
+SQL> insert into course values('&CourseID', '&Title', &Credits, '&PreReq');
+Enter value for courseid: EN100
+Enter value for title: Basic Englush
+Enter value for credits: 0
+Enter value for prereq: 
+old   1: insert into course values('&CourseID', '&Title', &Credits, '&PreReq')
+new   1: insert into course values('EN100', 'Basic Englush', 0, '')
+
+1 row created.
+
+SQL> insert into course values('&CourseID', '&Title', &Credits, '&PreReq');
+Enter value for courseid: LA123
+Enter value for title: English Literature
+Enter value for credits: 3
+Enter value for prereq: EN100
+old   1: insert into course values('&CourseID', '&Title', &Credits, '&PreReq')
+new   1: insert into course values('LA123', 'English Literature', 3, 'EN100')
+
+1 row created.
+
+SQL> insert into course values('&CourseID', '&Title', &Credits, '&PreReq');
+Enter value for courseid: CIS253
+Enter value for title: Database Systems
+Enter value for credits: 3
+Enter value for prereq: 
+old   1: insert into course values('&CourseID', '&Title', &Credits, '&PreReq')
+new   1: insert into course values('CIS253', 'Database Systems', 3, '')
+
+1 row created.
+
+SQL> insert into course values('&CourseID', '&Title', &Credits, '&PreReq');
+Enter value for courseid: CIS265
+Enter value for title: Systems Analysis
+Enter value for credits: 3
+Enter value for prereq: CIS253
+old   1: insert into course values('&CourseID', '&Title', &Credits, '&PreReq')
+new   1: insert into course values('CIS265', 'Systems Analysis', 3, 'CIS253')
+
+1 row created.
+
+SQL> insert into course values('&CourseID', '&Title', &Credits, '&PreReq');
+Enter value for courseid: MA150
+Enter value for title: College Algebra
+Enter value for credits: 3
+Enter value for prereq: 
+old   1: insert into course values('&CourseID', '&Title', &Credits, '&PreReq')
+new   1: insert into course values('MA150', 'College Algebra', 3, '')
+
+1 row created.
+
+SQL> insert into course values('&CourseID', '&Title', &Credits, '&PreReq');
+Enter value for courseid: AC101
+Enter value for title: Accounting
+Enter value for credits: 3
+Enter value for prereq: 
+old   1: insert into course values('&CourseID', '&Title', &Credits, '&PreReq')
+new   1: insert into course values('AC101', 'Accounting', 3, '')
+
+1 row created.
+
+SQL> select * from course;
+
+COURSE TITLE                   CREDITS PREREQ                                   
+------ -------------------- ---------- ------                                   
+EN100  Basic Englush                 0                                          
+LA123  English Literature            3 EN100                                    
+CIS253 Database Systems              3                                          
+CIS265 Systems Analysis              3 CIS253                                   
+MA150  College Algebra               3                                          
+AC101  Accounting                    3                                          
+
+6 rows selected.
+
+SQL> spool off;
