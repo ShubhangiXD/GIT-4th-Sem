@@ -2,7 +2,7 @@
 This is a rough go through of all the programming I did in 4th Sem.
 
 ## CONTENTS:
-HTML_CCS <br>
+HTML_CSS <br>
  -> Personal: <br>
     &emsp; -> Ideathon <br>
      &emsp;&emsp; - landing.html <br>
