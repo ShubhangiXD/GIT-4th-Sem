@@ -9,7 +9,6 @@ class C2D {
 
 class C3D extends C2D {
     int height;
-    int area = areaCal();
     public static int volCal(int a, int h) {
         int vol = a * h;
         return vol;

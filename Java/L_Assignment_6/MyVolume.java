@@ -4,7 +4,8 @@ public class MyVolume {
     double volume;
 
     public MyVolume(int side) {
-        this.volume = side * side * side; // cube
+        // this.volume = side * side * side; // cube
+        this.volume = Math.pow(side, 3);
     }
 
     public MyVolume(double length, double breadth, double height) {
@@ -12,7 +13,7 @@ public class MyVolume {
     }
 
     public MyVolume(double radius) {
-        this.volume = 4.0 / 3.0 * Math.PI * radius * radius * radius; // sphere
+        this.volume = 4.0 / 3.0 * Math.PI * Math.pow(radius, 3); // sphere
     }
 
     public void display() {
@@ -21,7 +22,6 @@ public class MyVolume {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter the side of the cube:");
         int side = sc.nextInt();
         MyVolume cube = new MyVolume(side);
