@@ -17,7 +17,7 @@ public class Student {
 
     private double calculateCGPA() {
         double percentage = (double) securedMark / fullMark * 100;
-        if (percentage >= 90) {
+        /*if (percentage >= 90) {
             return 10.0;
         } else if (percentage >= 80) {
             return 9.0;
@@ -31,7 +31,10 @@ public class Student {
             return 5.0;
         } else {
             return 0.0;
-        }
+        }*/
+        //System.out.println("Percentage = "+percentage);
+        percentage = Math.floor((percentage+10)/10.0);
+        return percentage;
     }
 
     public void display() {

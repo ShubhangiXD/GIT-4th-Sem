@@ -4,8 +4,7 @@ public class Q2 {
         int oddCount=0;
         for (int i=0; i<10;i++)
         {
-            String num=args[i];
-            int num1 = Integer.parseInt(num);
+            int num1 = Integer.parseInt(args[i]);
             if (num1%2==0)
             evenCount++;
             else
