@@ -41,5 +41,6 @@ public class Q4_Inherit {
         String stream = sc.nextLine();
         University obj = new University(name, year, stream);
         obj.display();
+        sc.close();
     }
 }
