@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Form</title>
+</head>
+
+<body>
+
+    <h2>Personal Information:</h2>
+
+    <form action="/" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea><br><br>
+
+        <label>Sex:</label><br>
+        <input type="radio" id="male" name="sex" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="sex" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" name="hobbies[]" value="reading">
+        <label>Reading</label>
+        <input type="checkbox" name="hobbies[]" value="traveling">
+        <label>Traveling</label><br><br>
+
+        <label for="qualification">Qualification:</label>
+        <select id="qualification" name="qualification">
+            <option value="">--Select Qualification--</option>
+            <option value="bachelors">Bachelors</option>
+            <option value="masters">Masters</option>
+            <option value="phd">PhD</option>
+        </select><br><br>
+
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+
+    </form>
+
+</body>
+
+</html>
