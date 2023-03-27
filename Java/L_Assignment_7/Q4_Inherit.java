@@ -25,8 +25,8 @@ class University extends Student {
     }
 
     public void display() {
-        super.display();
         System.out.println("Stream: " + stream);
+        super.display();
     }
 }
 
