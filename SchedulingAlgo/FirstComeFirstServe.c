@@ -2,9 +2,9 @@
 
 struct process
 {
-    int pid;          // process ID
-    int arr; // arrival time of process
-    int burst;   // burst time of process
+    int pid;          
+    int arr; 
+    int burst;   
 };
 
 int main()
