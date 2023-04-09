@@ -1,68 +1,57 @@
-import java.util.*;
-
-import javax.lang.model.util.ElementScanner14;
-
 class HrsException extends Exception {
-    HrsException(String hours) {
-        super(hours);
+    public HrsException(String message) {
+        super(message);
     }
 }
 
 class MinException extends Exception {
-    MinException(String minutes) {
-        super(minutes);
+    public MinException(String message) {
+        super(message);
     }
 }
 
 class SecException extends Exception {
-    SecException(String seconds) {
-        super(seconds);
+    public SecException(String message) {
+        super(message);
     }
 }
 
-public class Q3_TimeExceptions {
-    public static void takingTimeHours(int hours) throws HrsException {
-        if (hours < 0 && hours > 24) {
-            throw new HrsException("Invalid Hour value");
-        } else
-            System.out.println("Hours are valid");
+class Time {
+    private int hours;
+    private int minutes;
+    private int seconds;
+
+    public Time(int hours, int minutes, int seconds) throws HrsException, MinException, SecException {
+        if (hours < 0 || hours > 24) {
+            throw new HrsException("Hours should be between 0 and 24");
+        }
+        if (minutes < 0 || minutes > 60) {
+            throw new MinException("Minutes should be between 0 and 60");
+        }
+        if (seconds < 0 || seconds > 60) {
+            throw new SecException("Seconds should be between 0 and 60");
+        }
+        this.hours = hours;
+        this.minutes = minutes;
+        this.seconds = seconds;
     }
 
-    public static void takingTimeMinutes(int minutes) throws MinException {
-        if (minutes < 0 && minutes > 60) {
-            throw new MinException("Invalid Minute value");
-        } else
-            System.out.println("Minutes are valid");
+    public String toString() {
+        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
     }
+}
 
-    public static void takingTimeSeconds(int seconds) throws SecException {
-        if(seconds<0 && seconds>60){
-            throw new SecException("Invalid Second value");
-        } else
-        System.out.println("Second are valid");
-    }
-
+class Q3_TimeExceptions {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the hour value: ");
-        int hour = sc.nextInt();
-        System.out.println("Enter the minute value: ");
-        int minute = sc.nextInt();
-        System.out.println("Enter the second value: ");
-        int second = sc.nextInt();
         try {
-            takingTimeHours(hour);
-            takingTimeMinutes(minute);
-            takingTimeSeconds(second);
-        } catch (HrsException m) {
-            System.out.println("Exception occured: " + m);
+            Time t = new Time(25, 70, 80);
+            System.out.println("Time is: " + t);
+        } catch (HrsException e) {
+            System.out.println("HrsException: " + e.getMessage());
+        } catch (MinException e) {
+            System.out.println("MinException: " + e.getMessage());
+        } catch (SecException e) {
+            System.out.println("SecException: " + e.getMessage());
         }
-        catch (MinException m) {
-            System.out.println("Exception occured: " + m);
-        }
-        catch (SecException m) {
-            System.out.println("Exception occured: " + m);
-        }
-        sc.close();
     }
 }
