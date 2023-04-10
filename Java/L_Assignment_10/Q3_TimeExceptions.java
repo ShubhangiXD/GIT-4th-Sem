@@ -1,3 +1,4 @@
+import java.util.*;
 class HrsException extends Exception {
     public HrsException(String message) {
         super(message);
@@ -43,8 +44,13 @@ class Time {
 
 class Q3_TimeExceptions {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter hours, minutes and seconds: ");
+        int hours = sc.nextInt();
+        int minutes = sc.nextInt();
+        int seconds = sc.nextInt();
         try {
-            Time t = new Time(25, 70, 80);
+            Time t = new Time(hours, minutes, seconds);
             System.out.println("Time is: " + t);
         } catch (HrsException e) {
             System.out.println("HrsException: " + e.getMessage());
@@ -53,5 +59,6 @@ class Q3_TimeExceptions {
         } catch (SecException e) {
             System.out.println("SecException: " + e.getMessage());
         }
+        sc.close();
     }
 }
