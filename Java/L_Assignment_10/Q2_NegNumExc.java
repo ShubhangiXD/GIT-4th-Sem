@@ -11,7 +11,7 @@ public class Q2_NegNumExc {
         if (number<0){
             throw new NegativeNumberException("Number is negative.");
         } else
-        System.out.println("Number is positive.");
+        System.out.println("Number is positive and its double is: "+number*2);
     }
 
     public static void main(String[] args) {
