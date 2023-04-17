@@ -18,5 +18,6 @@ class Q1_addSub {
         System.out.println("Enter your middle name: ");
         String mid = sc.nextLine();
         System.out.println("Your full name is: " + fn + " " + mid + " " + ln);
+        sc.close();
     }
 }

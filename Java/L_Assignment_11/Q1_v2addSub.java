@@ -18,5 +18,6 @@ public class Q1_v2addSub {
                 break;
             }
         }
+        sc.close();
     }
 }
