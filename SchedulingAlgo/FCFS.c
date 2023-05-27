@@ -1,4 +1,5 @@
 #include <stdio.h>
+//fcfs with Arrival Time 0
 int main()
 {
     int pid[15];
